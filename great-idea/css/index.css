@@ -1,11 +1,9 @@
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html, body {
-    height: 100%;
-    width: 874px;
+    min-height: 100%;
+    width: 880px;
     margin: auto;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -219,7 +217,7 @@ header {
 }
 
 /* media queries ----------------------------- */
-@media all and (max-width: 874px) {
+@media all and (max-width: 880px) {
   html, body {
     width: 100%;
     padding: 0 5px;
