@@ -264,9 +264,6 @@ header {
   .services-card {
     width: 100%;
   }
-}
-
-@media all and (max-width: 400px) {
   .navlinks {
     flex-direction: column-reverse;
     height: auto;
@@ -277,5 +274,7 @@ header {
   .row {
     flex-direction: column;
   }
+  .row h5 {
+    margin-top: 20px;
+  }
 }
-  
