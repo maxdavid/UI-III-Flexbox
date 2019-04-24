@@ -166,6 +166,18 @@ header {
   background-color: #eee;
 }
 
+.clip-circle {
+  clip-path: circle(50% at 50% 50%);
+  max-width: 100%;
+  height: auto;
+}
+
+.vision-card {
+  background-color: #eee;
+  text-align: center;
+  margin: 0 10px;
+  padding: 20px;
+}
 
 /* footer  ----------------------------------- */
 .contact-info {
