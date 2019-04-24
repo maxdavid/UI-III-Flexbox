@@ -60,7 +60,6 @@ li {
 
 .column {}
 
-
 /* header and navbar  ------------------------ */
 header {
   padding: 30px 0;
@@ -146,11 +145,16 @@ header {
 }
 
 .services-facts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-facts-text {
   margin-right: 40px;
 }
 
 .services-card {
-  width: 420px;
+  max-width: 420px;
   min-height: 250px;
   background-color: #f4f3f4;
   border: 1px solid black;
@@ -180,7 +184,15 @@ header {
   height: auto;
 }
 
+.vision-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .vision-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #eee;
   text-align: center;
   margin: 0 10px;
@@ -205,3 +217,65 @@ header {
   text-align: center;
   font-size: 12px;
 }
+
+/* media queries ----------------------------- */
+@media all and (max-width: 874px) {
+  html, body {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .flex-cards-container {
+    justify-content: space-around;
+  }
+  .services-card {
+    width: 45%;
+    height: auto;
+  }
+  .row {
+    justify-content: space-around;
+  }
+  .navlinks {
+    justify-content: space-around;
+  }
+  .services-facts {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .services-facts * {
+    max-width: 420px;
+  }
+  .vision-flex-container {
+    flex-direction: column;
+  }
+  .vision-card {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .vision-card img {
+    max-width: 200px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .flex-cards-container {
+    flex-direction: column;
+    align-content: center;
+  }
+  .services-card {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .navlinks {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .navlinks a {
+    margin: 5px 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+  
